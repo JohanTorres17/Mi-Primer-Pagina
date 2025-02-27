@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+body {
+    display: grid;
+    grid-template-rows: 60px auto 40px;
+    grid-template-columns: 250px auto;
+    grid-template-areas: 
+        "header header"
+        "sidebar content"
+        "footer footer";
+    height: 100vh;
+    margin: 0;
+    background-color: #000000;
+    color: rgb(17, 5, 5);
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+header {
+    font-family: "Sigmar", serif;
+    font-weight: 400;
+    font-style: normal;
+    grid-area: header;
+    background: #723fa1;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+}
+
+aside {
+    grid-area: sidebar;
+    background: #ffffff;
+    padding: 15px;
+}
+
+main {
+    grid-area: content;
+    background: #fffefe;
+    padding: 20px;
+}
+
+section {
+    padding: 50px 20px;
+}
+
+/* Sección de noticias */
+
+
+.news .subtitle {
+    color: #000000;
+    font-size: 20px;
+}
+
+.news-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.news-card {
+    background: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    text-align: left;
+    position: relative;
+    color: #fff6f6;
+}
+
+.news-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.news-card .tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #ff4081;
+    color: white;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.news-card h3 {
+    padding: 10px;
+    font-size: 18px;
+}
+
+.news-card .date {
+    font-size: 14px;
+    color: #bbb;
+    padding: 0 10px 10px;
+}
+
+footer {
+    grid-area: footer;
+    color: #fffefe;
+    background: #333;
+    text-align: center;
+    padding: 10px;
+}
